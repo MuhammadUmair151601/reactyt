@@ -1,5 +1,7 @@
 // import React, { useState } from "react";
 
+// import { useState } from "react";
+
 // ************ changing value through number**************
 // const App = () => {
 
@@ -94,4 +96,38 @@
 //   );
 // };
 
+// export default App;
+
+// **************************Two way binding in react**************************
+
+// import React, { useState } from "react";
+
+// const App = () => {
+//   const [username, setusername] = useState("")
+//   const submitHandler = (e) => {
+//     e.preventDefault();
+//     console.log(`${username} your Form has been submitted:`);
+//     setusername('')
+//    };
+//   return (
+//     <form
+//       onSubmit={(e) => {
+//         submitHandler(e);
+//       }}
+//     >
+//       <input
+//         value={username}
+//          onChange={(e)=> {
+//           setusername(e.target.value)
+//         }}
+//         className="px-5 py-5 border-white rounded-[5px] bg-white m-5 text-black text-2xl font-bold"
+//         type="text"
+//         placeholder="Enter something"
+//       />
+//       <button className="px-7 py-5 border-white rounded-[5px] bg-orange-400 m-5 text-white text-2xl font-bold ">
+//         Submit
+//       </button>
+//     </form>
+//   );
+// };
 // export default App;
