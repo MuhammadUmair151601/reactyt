@@ -2,13 +2,13 @@
 
 // ************ changing value through number**************
 // const App = () => {
-  
+
 //   const [a, setA] = useState(30)
 //   const changea = () => {
 //     console.log("chal gaya:")
 //     setA(45);
 //   }
-  
+
 //   return <div>
 //   <h1>Hello your marks are {a}</h1>
 //   <button onClick={changea}>change user</button>
@@ -20,7 +20,7 @@
 // import React  from 'react'
 // import { useState } from "react";
 // const App = () => {
-  
+
 //   const [num, setnum]= useState(0)
 
 //   return (
@@ -66,3 +66,32 @@
 
 // export default App
 
+// ********************form handling in react**********************
+
+// import React, { useState } from "react";
+
+// const App = () => {
+//   const submitHandler = (e) => {
+//     e.preventDefault();
+//     console.log("Form submitted:");
+//     e.target.reset();
+//   };
+//   return (
+//     <form
+//       onSubmit={(e) => {
+//         submitHandler(e);
+//       }}
+//     >
+//       <input
+//         className="px-5 py-5 border-white rounded-[5px] bg-white m-5 text-black text-2xl font-bold"
+//         type="text"
+//         placeholder="Enter your name"
+//       />
+//       <button className="px-7 py-5 border-white rounded-[5px] bg-orange-400 m-5 text-white text-2xl font-bold ">
+//         Submit
+//       </button>
+//     </form>
+//   );
+// };
+
+// export default App;
