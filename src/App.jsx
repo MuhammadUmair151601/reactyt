@@ -131,3 +131,27 @@
 //   );
 // };
 // export default App;
+
+
+// ************************Components of react***********************
+ 
+
+// ************************Props drilling in react**************
+// we can pass data inside the tags.
+
+
+import React from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+const App = () => {
+  return (
+    <div>
+      <h1>I am using components below just to check!</h1>
+      <Header/>
+      <Footer/>
+    </div>
+  )
+}
+
+export default App
