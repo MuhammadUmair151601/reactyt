@@ -140,18 +140,33 @@
 // we can pass data inside the tags.
 
 
-import React from 'react'
-import Header from './components/Header'
-import Footer from './components/Footer'
+// import React from 'react'
+// import Header from './components/Header'
+// import Footer from './components/Footer'
 
-const App = () => {
-  return (
-    <div>
-      <h1>I am using components below just to check!</h1>
-      <Header/>
-      <Footer/>
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div>
+//       <h1>I am using components below just to check!</h1>
+//       <Header/>
+//       <Footer/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
+
+// *********************props and props drilling in react***********************
+// import React from 'react'
+// import Card from './components/Card';
+// const App = () => {
+  
+//   return (
+//     <div className='font-medius text-3xl'>
+//       <Card user = "M.umair"/> 
+//       <Card user ="Hamid ullah"/>
+//     </div>
+//   )
+// }
+
+// export default App;
