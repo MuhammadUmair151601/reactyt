@@ -185,3 +185,63 @@
 // }
 
 // export default App
+
+import React from 'react'
+import Card from './components/Card'
+const App = () => {
+
+  const users = [
+  {
+    "name": "Ali Khan",
+    "fName": "Ahmed Khan",
+    "age": 28,
+    "city": "Lahore",
+    "profession": "Software Engineer"
+  },
+  {
+    "name": "Sara Ahmed",
+    "fName": "Imran Ahmed",
+    "age": 24,
+    "city": "Karachi",
+    "profession": "Doctor"
+  },
+  {
+    "name": "Bilal Hussain",
+    "fName": "Tariq Hussain",
+    "age": 32,
+    "city": "Islamabad",
+    "profession": "Teacher"
+  },
+  {
+    "name": "Ayesha Malik",
+    "fName": "Rashid Malik",
+    "age": 27,
+    "city": "Faisalabad",
+    "profession": "Graphic Designer"
+  },
+  {
+    "name": "Usman Raza",
+    "fName": "Nadeem Raza",
+    "age": 30,
+    "city": "Peshawar",
+    "profession": "Business Analyst"
+  }
+]
+
+
+  return (
+    <div>
+      {users.map(function(elem){
+        return <Card
+         username = {elem.name}
+         prof = {elem.profession}
+         Father = {elem.fName}
+         city = {elem.city}
+         age = {elem.age}
+         />
+      })}
+    </div>
+  )
+}
+
+export default App
