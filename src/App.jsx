@@ -186,6 +186,8 @@
 
 // export default App
 
+// 
+
 import React from 'react'
 import Card from './components/Card'
 const App = () => {
@@ -214,10 +216,10 @@ const App = () => {
   },
   {
     "name": "Ayesha Malik",
-    "fName": "Rashid Malik",
+    "fName": "Rashname Malik",
     "age": 27,
     "city": "Faisalabad",
-    "profession": "Graphic Designer"
+    "profession": "Graphic D Designer"
   },
   {
     "name": "Usman Raza",
@@ -244,4 +246,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App

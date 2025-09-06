@@ -26,13 +26,30 @@
 
 // export default Card
 
+// import React from 'react'
+
+// const Card = (props) => {
+//   return (
+//       <div className="w-50 h-70 m-5 bg-white text-black text-2xl font-bold text-center">
+//       <h1>{props.name}</h1>
+//       <h1>{props.fname}</h1>
+//       <h1>{props.age}</h1>
+//       <h1>{props.city}</h1>
+//       <h1>{props.prof}</h1>
+//       <button className="px-3 py-2 bg-emerald-600 text-white font-bold text-2xl rounded">Submit</button>
+//       </div>
+//   )
+// }
+
+// export default Card
+
 import React from 'react'
 
 const Card = (props) => {
   return (
       <div className="w-50 h-70 m-5 bg-white text-black text-2xl font-bold text-center">
-      <h1>{props.name}</h1>
-      <h1>{props.fname}</h1>
+      <h1>{props.username}</h1>
+      <h1>{props.Father}</h1>
       <h1>{props.age}</h1>
       <h1>{props.city}</h1>
       <h1>{props.prof}</h1>
@@ -40,5 +57,4 @@ const Card = (props) => {
       </div>
   )
 }
-
 export default Card
