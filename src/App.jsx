@@ -270,8 +270,11 @@ const App = () => {
     <div className='m-10'>
       <button onClick={getData} className='px-4 py-3 bg-gray-400 text-white text-2xl font-bold rounded active:scale-90 '>Get data</button>
       <div className='bg-white text-black text-2xl'>
-      {data.map(function(){
-        return <h1>Hello</h1>
+      {data.map(function(elem, idx){
+        return <div key={idx} className='bg-white h-40 w-40 '>
+          <img src={elem.download_url} alt="" />
+          <h1>{elem.author}</h1>
+        </div>
       })}
       </div>
     </div>
