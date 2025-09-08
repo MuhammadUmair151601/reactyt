@@ -248,3 +248,34 @@
 // }
 
 // export default App;
+
+// ********************Context API (axios)*******************************
+
+import axios from 'axios'
+import React from 'react'
+import { useState } from 'react'
+const App = () => {
+
+  const [data, setData] = useState([])
+
+  const getData = async ()=>{
+  const response = await axios.get("https://picsum.photos/v2/list?page=2&limit=100")
+  // const data = response.data  
+
+  setData(response.data)
+  // jo response hay uske andar ka data:
+  console.log(data)
+  }
+  return (
+    <div className='m-10'>
+      <button onClick={getData} className='px-4 py-3 bg-gray-400 text-white text-2xl font-bold rounded active:scale-90 '>Get data</button>
+      <div className='bg-white text-black text-2xl'>
+      {data.map(function(){
+        return <h1>Hello</h1>
+      })}
+      </div>
+    </div>
+  )
+}
+
+export default App

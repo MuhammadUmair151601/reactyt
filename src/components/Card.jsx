@@ -45,3 +45,13 @@
 //   )
 // }
 // export default Card
+
+// *************************Context API (Axios)**************************
+
+import React from 'react'
+
+export const Card = () => {
+  return (
+    <div></div>
+  )
+}
