@@ -46,12 +46,19 @@
 // }
 // export default Card
 
-// *************************Context API (Axios)**************************
+// *************************Context API (Axios)************************
 
-import React from 'react'
+// import React from 'react'
 
-export const Card = () => {
-  return (
-    <div></div>
-  )
-}
+// const Card = (props) => {
+//   return (
+//     <div className='h-80 w-70 bg-white m-5 text-black flex flex-col items-center justify-center gap-5'>
+//       <div> <h1>{props.name}</h1></div>
+//       <div><h2>{props.city}</h2></div>
+//       <div><h3>{props.contact}</h3></div>
+//       <button className='bg-blue-500 px-5 py-1 rounded-[5px] font-bold text-white '>Submit</button>
+//     </div>
+//   )
+// }
+
+// export default Card

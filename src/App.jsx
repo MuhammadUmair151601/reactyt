@@ -251,34 +251,82 @@
 
 // ********************Context API (axios)*******************************
 
-import axios from 'axios'
-import React from 'react'
-import { useState } from 'react'
-const App = () => {
+// import axios from 'axios'
+// import React from 'react'
+// import { useState } from 'react'
+// const App = () => {
 
-  const [data, setData] = useState([])
+//   const [data, setData] = useState([])
 
-  const getData = async ()=>{
-  const response = await axios.get("https://picsum.photos/v2/list?page=2&limit=100")
-  // const data = response.data  
+//   const getData = async ()=>{
+//   const response = await axios.get("https://picsum.photos/v2/list?page=2&limit=100")
+//   // const data = response.data  
 
-  setData(response.data)
-  // jo response hay uske andar ka data:
-  console.log(data)
-  }
-  return (
-    <div className='m-10'>
-      <button onClick={getData} className='px-4 py-3 bg-gray-400 text-white text-2xl font-bold rounded active:scale-90 '>Get data</button>
-      <div className='bg-white text-black text-2xl'>
-      {data.map(function(elem, idx){
-        return <div key={idx} className='bg-white h-40 w-40 '>
-          <img src={elem.download_url} alt="" />
-          <h1>{elem.author}</h1>
-        </div>
-      })}
-      </div>
-    </div>
-  )
-}
+//   setData(response.data)
+//   // jo response hay uske andar ka data:
+//   console.log(data)
+//   }
+//   return (
+//     <div className='m-10'>
+//       <button onClick={getData} className='px-4 py-3 bg-gray-400 text-white text-2xl font-bold rounded active:scale-90 '>Get data</button>
+//       <div className='bg-white text-black text-2xl'>
+//       {data.map(function(elem, idx){
+//         return <div key={idx} className='bg-white h-40 w-40 '>
+//           <img src={elem.download_url} alt="" />
+//           <h1>{elem.author}</h1>
+//         </div>
+//       })}
+//       </div>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
+
+// import React from 'react'
+// import Card from './components/Card'
+
+// const App = () => {
+//   const data =[
+//   {
+//     "name": "Ali Khan",
+//     "city": "Peshawar",
+//     "contact": "0312-4567890"
+//   },
+//   {
+//     "name": "Sara Ahmed",
+//     "city": "Lahore",
+//     "contact": "0321-9876543"
+//   },
+//   {
+//     "name": "Usman Tariq",
+//     "city": "Islamabad",
+//     "contact": "0333-1122334"
+//   },
+//   {
+//     "name": "Fatima Noor",
+//     "city": "Karachi",
+//     "contact": "0345-6677889"
+//   },
+//   {
+//     "name": "Bilal Hussain",
+//     "city": "Quetta",
+//     "contact": "0300-9988776"
+//   }
+// ]
+
+//   return (
+//     <div className='flex flex-wrap'>
+//       {data.map((elem, idx)=>{
+//         return <Card key = {idx}
+//         name = {elem.name}
+//         city = {elem.city}
+//         contact = {elem.contacta}
+//         />
+//       })}
+      
+//     </div>
+//   )
+// }
+
+// export default App
